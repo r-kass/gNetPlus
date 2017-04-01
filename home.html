@@ -1,12 +1,15 @@
 <!DOCTYPE html><html><head><title>Dialog test</title></head><body>
-<form>
-    <body background="bgimage.jpg">
-    <p> <strong><center> gNet+ Google+ Network Extension </strong> </p>
-    <p></p>
-    <form action="/information">
-    <input type="submit" value="Click to enter your information" />
-    <form action="/search">
-    <input type="submit" value="Click to search for information"> </center>
+<body background="bgimage.jpg">
+  <p> <strong><center> gNet+ Google+ Network Extension </strong> </p>
+<br><br><br><br>
+<form action="/information.html" method="get">
+    <input type="submit" value="Click to enter your information"
+         name="Submit" id="information" />
 </form>
-<script src="home.js"></script>
+<br>
+<form action="/search.html" method="get">
+    <input type="submit" value="Click to search for information"
+         name="Submit" id="search" />
+</form>
+
 </body></html>

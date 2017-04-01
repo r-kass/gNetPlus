@@ -1,11 +1,12 @@
 // Handle requests for passwords
 chrome.browserAction.setIcon({path:"logo.JPG"});
 chrome.runtime.onMessage.addListener(function(request) {
-    if (request.type === 'get_info') {
+//    if (request.type === 'get_info') {
         chrome.tabs.create({
-            url: chrome.extension.getURL('dialog.html'),
+            url: chrome.extension.getURL('home.html'),
             active: false
-        }, function(tab) {
+        },
+        function(tab) {
             // After the tab has been created, open a window to inject the tab
             chrome.windows.create({
                 tabId: tab.id,
@@ -15,7 +16,7 @@ chrome.runtime.onMessage.addListener(function(request) {
                 // incognito, top, left, ...
             });
         });
-    }
+  //  }
 });
 
 function setSchool(school) {
