@@ -1,9 +1,8 @@
 document.forms[0].onsubmit = function(e) {
     e.preventDefault(); // Prevent submission
-    var input=document.getElementById('input').value;
-
+    var search = document.getElementById('search').value;
     chrome.runtime.getBackgroundPage(function(bgWindow) {
-        bgWindow.setPassword(password);
+        bgWindow.setSearch(search);
         window.close();     // Close dialog
     });
-  };
+};

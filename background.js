@@ -1,4 +1,5 @@
 // Handle requests for passwords
+chrome.browserAction.setIcon({path:"logo.JPG"});
 chrome.runtime.onMessage.addListener(function(request) {
     if (request.type === 'get_info') {
         chrome.tabs.create({
@@ -11,13 +12,12 @@ chrome.runtime.onMessage.addListener(function(request) {
                 type: 'popup',
                 height: 400,
                 width: 250,
-			//fixed: yes,
-                focused: true
                 // incognito, top, left, ...
             });
         });
     }
 });
+
 function setSchool(school) {
     console.log(school);
 };
@@ -29,4 +29,7 @@ function setMajor(major) {
 };
 function setEmail(email) {
     console.log(email);
+};
+function setSearch(search) {
+    console.log(search);
 };
