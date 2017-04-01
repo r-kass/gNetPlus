@@ -9,6 +9,9 @@ chrome.runtime.onMessage.addListener(function(request) {
             chrome.windows.create({
                 tabId: tab.id,
                 type: 'popup',
+                height: 400,
+                width: 250,
+                fixed: yes,
                 focused: true
                 // incognito, top, left, ...
             });
@@ -16,18 +19,14 @@ chrome.runtime.onMessage.addListener(function(request) {
     }
 });
 function setSchool(school) {
-    // Do something, eg..:
     console.log(school);
 };
 function setCity(city) {
-    // Do something, eg..:
     console.log(city);
 };
 function setMajor(major) {
-    // Do something, eg..:
     console.log(major);
 };
 function setEmail(email) {
-    // Do something, eg..:
     console.log(email);
 };
