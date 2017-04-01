@@ -15,7 +15,19 @@ chrome.runtime.onMessage.addListener(function(request) {
         });
     }
 });
-function setPassword(password) {
+function setSchool(school) {
     // Do something, eg..:
-    console.log(password);
+    console.log(school);
+};
+function setCity(city) {
+    // Do something, eg..:
+    console.log(city);
+};
+function setMajor(major) {
+    // Do something, eg..:
+    console.log(major);
+};
+function setEmail(email) {
+    // Do something, eg..:
+    console.log(email);
 };
