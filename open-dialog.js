@@ -1,2 +1,2 @@
-if (confirm('Open gNet to use with Google+?' + "/n" + "please login."))
+if (confirm("Please login to Google+ to use gNet"))
     chrome.runtime.sendMessage({type:'get_info'});
