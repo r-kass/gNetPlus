@@ -1,7 +1,4 @@
-<!DOCTYPE html><html><head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-
-<title>Dialog test</title></head><body>
+<!DOCTYPE html><html><head><title>Dialog test</title></head><body>
 
 <script >function myFunction() {
   $.get( "colab-sbx-pvt-15.oit.duke.edu:8000/sendinfo%", function( data ) {
